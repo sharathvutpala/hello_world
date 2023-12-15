@@ -1,0 +1,264 @@
+$purple: #6400ff;
+$lightBlue: #87e5e3;
+$wine: #911e5b;
+
+$primary: $purple;
+$secondary: $purple;
+$success: $lightBlue;
+$danger: $wine;
+
+@font-face {
+  font-family: "Albert";
+  src: local("Albert"),
+    url(./assets/fonts/FSAlbertPro-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Albert-Bold";
+  src: local("Albert-Bold"),
+    url(./assets/fonts/FSAlbertPro-Bold.ttf) format("truetype");
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "Albert" !important;
+  // background-color: black !important;
+  // color: white !important;
+}
+
+.navbar-brand {
+  display: inline-block;
+  float: none;
+  font-size: 18px;
+  height: 100%;
+  padding: 0;
+  vertical-align: middle !important;
+  color: white !important;
+}
+
+.navbar {
+  padding-bottom: 2rem !important;
+}
+
+img {
+  width: 240px;
+}
+
+nav a img {
+  width: 120px;
+}
+
+.top-gradient {
+  background-color: $lightBlue;
+  background-image: linear-gradient(to bottom right, $lightBlue, $purple);
+}
+
+.wrapper {
+  background-color: white;
+}
+
+#content {
+  color: black;
+  padding-top: 20px;
+}
+
+#title {
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.url-card {
+  color: black;
+}
+
+h3 {
+  color: black;
+}
+.description {
+  color: gray;
+}
+
+.card-url {
+  max-width: 240px !important;
+  min-width: 240px !important;
+  border-radius: 4px !important;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12) !important;
+  padding-left: 14px;
+  padding-top: 14px;
+  cursor: pointer;
+}
+
+.card-url:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-feed {
+  border-radius: 4px !important;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12) !important;
+  padding-left: 14px;
+  padding-top: 14px;
+}
+
+.card-feed:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+  color: $primary !important;
+}
+
+.message {
+  color: white;
+  text-align: left;
+  padding-top: 5px;
+}
+.message-seminar {
+  text-align: left;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.avatar {
+  max-width: 32px;
+  min-width: 32px;
+  cursor: pointer;
+}
+
+.container-fluid {
+  padding-left: 85px !important;
+  padding-right: 85px !important;
+}
+
+.card {
+  display: inline-block !important;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1200px !important;
+  }
+}
+
+.card-bg1 {
+  background-color: rgb(137 166 231) !important;
+}
+
+.card-bg0 {
+  background-color: rgb(153 215 227) !important;
+}
+
+.card-bg2 {
+  background-color: rgb(103 69 241) !important;
+}
+
+.card-bg3 {
+  background-color: rgb(88 39 239) !important;
+}
+
+.tooltip-inner {
+  background-color: $primary !important;
+}
+
+.p-x-small {
+  font-size: 13px;
+}
+
+// Animations
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.modal-custom {
+  background-color: rgba(0, 0, 0, 0.4); /* Transparent dimmed overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+}
+
+.modal-custom.hidden {
+  display: none;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+}
+
+.modal-custom .container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+}
+
+.modal-custom .body {
+  display: inline-block;
+}
+
+.card-seminar {
+  max-width: 325px !important;
+  min-width: 325px !important;
+  min-height: 300px !important;
+  max-height: 300px !important;
+  border-radius: 4px !important;
+  overflow-y: hidden;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12) !important;
+  padding-left: 14px;
+  padding-top: 14px;
+  color: white;
+}
+
+.card-seminar:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-even {
+  background-color: rgb(88 39 239) !important;
+}
+.card-odd {
+  background-color: rgb(137 166 231) !important;
+}
+
+.btn-light {
+  color: $primary !important;
+}
+
+.custom-tooltip {
+  display: none;
+  margin-left: 5px;
+  padding: 5px 12px;
+  background-color: #0000009c;
+  border-radius: 4px;
+  color: #fff;
+}
